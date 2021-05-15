@@ -1,0 +1,12 @@
+[submodule "fw/external/cmsis-5"]
+	path = fw/external/cmsis-5
+	url = https://github.com/cmsis-packs/cmsis-5
+[submodule "fw/external/cmsis-dfp-stm32f1"]
+	path = fw/external/cmsis-dfp-stm32f1
+	url = https://github.com/cmsis-packs/cmsis-dfp-stm32f1
+[submodule "fw/external/tinyusb"]
+	path = fw/external/tinyusb
+	url = https://github.com/hathach/tinyusb_src
+[submodule "fw/external/printf"]
+	path = fw/external/printf
+	url = https://github.com/mpaland/printf

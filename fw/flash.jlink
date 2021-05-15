@@ -1,0 +1,5 @@
+r
+loadfile nrf52-jailbreaker.hex
+r
+go
+exit
