@@ -5,7 +5,7 @@ import time
 import sys
 import serial
 import argparse
-import os
+import subprocess
 
 
 def glitch_target(ser):
@@ -22,7 +22,9 @@ def set_time_to_glitch(ser, time):
 
 # TODO proper
 def test_debug():
-	if(os.system("openocd -c \"adapter driver jlink; transport select swd; source [find target/stm32f1x.cfg]\" -c \"init;dump_image nrf52_dumped.bin 0x0 0x100000\" -c shutdown")):
+	interface = "adapter driver jlink; transport select swd; source [find target/nrf52.cfg]"
+	dump = "init;dump_image nrf52_dumped.bin 0x0 0x100000;exit"
+	if(subprocess.call(['openocd', '-c', interface, '-c', dump])):
 		return False
 	else:
 		return True
