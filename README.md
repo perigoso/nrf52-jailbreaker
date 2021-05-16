@@ -41,3 +41,7 @@ you will need **arm-none-eabi**
 you can flash with a connected jlink with
 
 `ninja flash`
+
+## Aknowledgement
+
+https://limitedresults.com/2020/06/nrf52-debug-resurrection-approtect-bypass/
