@@ -25,7 +25,7 @@ static const struct gpio_pin_t power_io = {.port = GPIO_PORT_A, .pin = 2};
 static const struct gpio_pin_t user_led_io = {.port = GPIO_PORT_C, .pin = 13};
 
 static volatile u32 glitch_width = 4; /* default to 500ns (125ns steps) */
-static volatile u32 time_to_glitch = 504000; /* default to 63ms (125ns steps) */
+static volatile u32 time_to_glitch = 24000; /* default to 63ms (125ns steps) */
 static volatile u32 reset_width = 800000; /* default to 100ms (125ns steps) */
 
 /* Terminal strings */
@@ -47,7 +47,7 @@ generic\n\r\
 config\n\r\
  w    glitch pulse width (format: command%%d, 125ns steps, default 4/500ns)\n\r\
  l    reset pulse width (format: command%%d, 125ns steps, default 800000/100ms)\n\r\
- d    time between reset and glitch (format: command%%d, 125ns steps, default 504000/63ms)\n\r\
+ d    time between reset and glitch (format: command%%d, 125ns steps, default 24000/3ms)\n\r\
 \n\r"
 #define UNEXPECTED_STR			"Something unexpected happened.\n\r"
 
