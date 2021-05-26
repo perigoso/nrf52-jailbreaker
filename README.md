@@ -1,3 +1,5 @@
+# This is not expected to see any further develepment, turns out the device i was trying to break wasn't even protected, lol.
+
 # nrf42-jailbreaker
 
 Just a simple firmware running on a stm32 bluepill (and a couple external mosfets), allowing us to glitch nrf52 chips.
